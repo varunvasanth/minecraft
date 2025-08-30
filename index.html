@@ -1,38 +1,8 @@
 <html>
-<input type="text" value="type on me!" id="second-text"/>
-<button id="second-button">type on me!
-    hi click me if you want to
-</button>
-<button disabled id="enterer">
-    enter
-</button>
-<span id="spanners-lost-wild-life">
-    the cat came back
-</span>
-<script>
-    let spanElement = document.getElementById("spanners-lost-wild-life");
-    let buttonElement = document.getElementById("second-button");
-    buttonElement.addEventListener("click", function(){
-        let enterElement = document.getElementById("enterer");
-        enterElement.removeAttribute("disabled");
-        console.log("hiiiii");
-        spanElement.innerText = "bye the cat left";
-        setTimeout(function(){
-            spanElement.innerText = "the cat came back again";
-            enterElement.setAttribute("disabled", true);
-        }, 1000);
-    });
-    
+    <select id="target-item-selector" onchange="">
 
+    </select>
 
-
-
-
-
-
-
-
-
-    
-</script>
+    <script src="data.js"></script>
+    <script src="buttons.js"></script>
 </html>
