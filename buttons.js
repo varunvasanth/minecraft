@@ -17,7 +17,7 @@ function createEnchantment(enchantment, enchantmentNumber) {
     for (let j = 0; j < maxLevel; j++) {
 
         enchantmentsDiv.innerHTML +=
-            `<input type='radio' name='group-number-${enchantmentNumber}' id='1.${j}' value='${enchantmentNumber}.${j + 1}'/>${j}`;
+            `<input type='radio' name='group-number-${enchantmentNumber}' id='1.${j}' value='${enchantmentNumber}.${j + 1}'/>${j+1}`;
     }
     enchantmentsDiv.innerHTML += "<br/>"
 }
@@ -33,7 +33,7 @@ function onItemSelected(itemName) {
     if (selectedItem) {
         for (let k = 0; k < selectedItem.enchantments.length; k++) {
             let enchantment = selectedItem.enchantments[k];
-            createEnchantment(enchantment, k);
+            createEnchantment(enchantment, k+1);
         }
     }
 
