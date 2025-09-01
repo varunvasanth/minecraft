@@ -267,6 +267,152 @@ let items = [
         ]
     },
     {
+        "name": "Bow",
+        "enchantments": [
+            {
+                "name": "Curse of Vanishing",
+                "max-level": 1
+            },
+            {
+                "name": "Flame",
+                "max-level": 1
+            },
+            {
+                "name": "Infinity",
+                "max-level": 1
+            },
+            {
+                "name": "Mending",
+                "max-level": 1
+            },
+            {
+                "name": "Power",
+                "max-level": 5 
+            },
+            {
+                "name": "Punch",
+                "max-level": 2
+            },
+            {
+                "name": "Unbreaking",
+                "max-level": 3
+            },
+        ]
+    },
+    {
+        "name": "Brush",
+            "enchantments": [
+            {
+                "name": "Curse of Vanishing",
+                "max-level": 1
+            },
+            {
+                "name": "Mending",
+                "max-level": 1
+            },
+            {
+                "name": "Unbreaking",
+                "max-level": 3
+            }
+        ]
+    },
+    {
+        "name": "Carrot on a Stick",
+        "enchantments": [
+            {
+                "name": "Curse of Vanishing",
+                "max-level": 1
+            },
+            {
+                "name": "Mending",
+                "max-level": 1
+            },
+            {
+                "name": "Unbreaking",
+                "max-level": 3
+            }
+        ]
+    },
+    {
+        "name": "Chestplate",
+        "enchantments": [
+            {
+                "name": "Blast Protection",
+                "max-level": 4
+            },
+            {
+                "name": "Curse of Binding",
+                "max-level": 1
+            },
+            {
+                "name": "Curse of Vanishing",
+                "max-level": 1
+            },
+            {
+                "name": "Fire Protection",
+                "max-level": 4 
+            },
+            {
+                "name": "Mending",
+                "max-level": 1
+            },
+            {
+                "name": "Projectile Protection",
+                "max-level": 4
+            },
+            {
+                "name": "Protection",
+                "max-level": 4
+            },
+            {
+                "name": "Thorns",
+                "max-level": 3
+            },
+            {
+                "name": "Unbreaking",
+                "max-level": 3
+            },
+        ]
+    },
+    {
+        "name": "Compass",
+        "enchantments": [
+            {
+                "name": "Curse of Vanishing",
+                "max-level": 1
+            },
+        ]
+    },
+    {
+        "name": "Crossbow",
+        "enchantments": [
+            {
+                "name": "Curse of Vanishing",
+                "max-level": 1
+            },
+            {
+                "name": "Mending",
+                "max-level": 1
+            },
+            {
+                "name": "Multishot",
+                "max-level": 1
+            },
+            {
+                "name": "Piercing",
+                "max-level": 4
+            },
+            {
+                "name": "Quick Charge",
+                "max-level": 3
+            },
+            {
+                "name": "Unbreaking",
+                "max-level": 3
+            },
+        ]
+    },
+    {
         "name": "Shield",
         "enchantments": [
             {
