@@ -210,6 +210,63 @@ let items = [
         ]
     },
     {
+        "name": "Boots",
+        "enchantments": [
+            {
+                "name": "Blast Protection",
+                "max-level": 4
+            },
+            {
+                "name": "Curse of Binding",
+                "max-level": 1
+            },
+            {
+                "name": "Curse of Vanishing",
+                "max-level": 1
+            },
+            {
+                "name": "Depth Strider",
+                "max-level": 3
+            },
+            {
+                "name": "Feather Falling",
+                "max-level": 4 
+            },
+            {
+                "name": "Fire Protection",
+                "max-level": 4 
+            },
+            {
+                "name": "Frost Walker",
+                "max-level": 2
+            },
+            {
+                "name": "Mending",
+                "max-level": 1
+            },
+            {
+                "name": "Projectile Protection",
+                "max-level": 4
+            },
+            {
+                "name": "Protection",
+                "max-level": 4
+            },
+            {
+                "name": "Soul Speed",
+                "max-level": 3
+            },
+            {
+                "name": "Thorns",
+                "max-level": 3
+            },
+            {
+                "name": "Unbreaking",
+                "max-level": 3
+            },
+        ]
+    },
+    {
         "name": "Shield",
         "enchantments": [
             {
