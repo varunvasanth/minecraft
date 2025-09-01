@@ -1,9 +1,21 @@
 <html>
-    <select id="target-item-selector" onchange="onItemSelected(value)"></select>
-    
-    <table id="table-for-target-buttons-and-enchantments"></table>
+<table width="100%">
+    <tr>
+        <td style="vertical-align: top;" width="50%">
+            <select id="target-item-selector" onchange="onItemSelected(value, 'target')"></select>
 
-    <script src="data.js"></script>
+            <table id="target-table"></table>
+        </td>
+        <td style="vertical-align: top;" width="50%">
+            <select id="sacrifice-item-selector" onchange="onItemSelected(value, 'sacrifice')"></select>
 
-    <script src="buttons.js"></script>
+            <table id="sacrifice-table"></table>
+        </td>
+    </tr>
+</table>
+
+<script src="data.js"></script>
+
+<script src="buttons.js"></script>
+
 </html>
