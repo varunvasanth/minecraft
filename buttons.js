@@ -8,7 +8,7 @@ function createItemDropdown(targetOrSacrifice) {
             "<option value='" + item.name + "'>" + item.name + "</option>";
     }
 }
-function createEnchantment(enchantment, enchantmentNumber) {
+function createEnchantment(enchantment, enchantmentNumber, targetOrSacrifice) {
     let maxLevel = enchantment["max-level"];
     let tableRowStructure = "";
     tableRowStructure += "<tr><td>" + enchantment.name + "</td>";
@@ -17,9 +17,9 @@ function createEnchantment(enchantment, enchantmentNumber) {
             tableRowStructure +=
                 `<td>
                     <input type='radio'
-                        name='group-number-${enchantmentNumber}'
-                        id='1.${j}'
-                        value='${enchantmentNumber}.${j}'
+                        name='${targetOrSacrifice}-group-number-${enchantmentNumber}'
+                        id='${targetOrSacrifice}-${enchantmentNumber}.${j}'
+                        value='${j}'
                         checked />
                     ${j}
                 </td>`;
@@ -27,9 +27,9 @@ function createEnchantment(enchantment, enchantmentNumber) {
             tableRowStructure +=
                 `<td>
                     <input type='radio'
-                        name='group-number-${enchantmentNumber}'
-                        id='1.${j}'
-                        value='${enchantmentNumber}.${j}'/>
+                        name='${targetOrSacrifice}-group-number-${enchantmentNumber}'
+                        id='${targetOrSacrifice}-${enchantmentNumber}.${j}'
+                        value='${j}'/>
                     ${j}
                 </td>`;
         }
@@ -49,22 +49,29 @@ function onItemSelected(itemName, targetOrSacrifice) {
     if (selectedItem) {
         for (let k = 0; k < selectedItem.enchantments.length; k++) {
             let enchantment = selectedItem.enchantments[k];
-            enchantmentsTable.innerHTML += createEnchantment(enchantment, k + 1);
+            enchantmentsTable.innerHTML += createEnchantment(enchantment, k + 1, targetOrSacrifice);
         }
     }
 
 }
 
 
-function getSelectedButtons(targetOrSacrifice){
+function getSelectedButtons(targetOrSacrifice) {
+    let selectedEnchantmentValuesTarget = [];
     let selectedItemName = document.getElementById(targetOrSacrifice + "-item-selector").value;
     let selectedItem = items.find(item => item.name == selectedItemName);
-    let amountOfEnchantmens = selectedItem.enchantments.length
-    
-    for(let l = 0; l < amountOfEnchantmens; l++){
-        console.log("cats are kinda cute, but dogs are better")
-    }
+    let amountOfEnchantments = selectedItem.enchantments.length
 
+    for (let l = 0; l < amountOfEnchantments; l++) {
+        let valueElements = Array.from(document.getElementsByName(`${targetOrSacrifice}-group-number-${l+1}`));
+        
+        let checkedValueElement = valueElements.find(function(valueElement){
+            return valueElement.checked;
+        });
+        selectedEnchantmentValuesTarget.push(checkedValueElement.value);
+        console.log(selectedEnchantmentValuesTarget);
+    }
+    
 }
 
 
