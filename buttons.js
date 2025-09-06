@@ -1,4 +1,7 @@
 
+let selectedEnchantmentValuestarget = [];
+let selectedEnchantmentValuessacrifice = [];
+    
 function createItemDropdown(targetOrSacrifice) {
     let dropdownElement = document.getElementById(targetOrSacrifice + "-item-selector");
     dropdownElement.innerHTML = "<option value=''>Choose your enchantment</option>";
@@ -55,23 +58,31 @@ function onItemSelected(itemName, targetOrSacrifice) {
 
 }
 
+function onSubmit() {
+    getSelectedButtons("target")
+    getSelectedButtons("sacrifice")
+    calucate();
+}
 
 function getSelectedButtons(targetOrSacrifice) {
-    let selectedEnchantmentValuesTarget = [];
     let selectedItemName = document.getElementById(targetOrSacrifice + "-item-selector").value;
     let selectedItem = items.find(item => item.name == selectedItemName);
-    let amountOfEnchantments = selectedItem.enchantments.length
+    if (selectedItem != undefined) {
+        let amountOfEnchantments = selectedItem.enchantments.length;
+        eval("selectedEnchantmentValues" + targetOrSacrifice + "=[];")
+        let hicats = eval("selectedEnchantmentValues" + targetOrSacrifice);
+        for (let l = 0; l < amountOfEnchantments; l++) {
+            let valueElements = Array.from(document.getElementsByName(`${targetOrSacrifice}-group-number-${l + 1}`));
 
-    for (let l = 0; l < amountOfEnchantments; l++) {
-        let valueElements = Array.from(document.getElementsByName(`${targetOrSacrifice}-group-number-${l+1}`));
-        
-        let checkedValueElement = valueElements.find(function(valueElement){
-            return valueElement.checked;
-        });
-        selectedEnchantmentValuesTarget.push(checkedValueElement.value);
-        console.log(selectedEnchantmentValuesTarget);
+            let checkedValueElement = valueElements.find(function (valueElement) {
+                return valueElement.checked;
+            });
+            console.log(l);
+            console.log(selectedItem.enchantments[l]);
+            hicats.push(checkedValueElement.value + "." + selectedItem.enchantments[l].name + "." + selectedItem.enchantments[l]["max-level"]);
+            console.log(hicats);
+        }
     }
-    
 }
 
 

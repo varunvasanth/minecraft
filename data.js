@@ -41,6 +41,15 @@ let items = [
         ]
     },
     {
+        "name": "Filler",
+        "enchantments": [
+            {
+                "name": "Unbreaking",
+                "max-level": 3
+            }
+        ]
+    },
+    {
         "name": "Book",
         "enchantments": [
             {
@@ -453,15 +462,33 @@ let items = [
                 "max-level": 1
             }
         ]
+    },
+];
+
+let multipliers = [
+    
+    {
+        "name": "Unbreaking",
+        "multiplier": 7
+    },
+    {
+        "name": "Mending",
+        "multiplier": 2
+    },
+    {
+        "name": "Curse of Vanishing",
+        "multiplier": 5
     }
 ];
+
+
 
 
 for (let i = 0; i < items.length; i++) {
     console.log(items[i].name);
     let enchantments = items[i].enchantments;
     for (let j = 0; j < enchantments.length; j++) {
-        console.log(enchantments[j].name);
-        console.log(enchantments[j]["max-level"])
+        //console.log(enchantments[j].name);
+        //console.log(enchantments[j]["max-level"])
     }
 }
