@@ -41,15 +41,6 @@ let items = [
         ]
     },
     {
-        "name": "Filler",
-        "enchantments": [
-            {
-                "name": "Unbreaking",
-                "max-level": 3
-            }
-        ]
-    },
-    {
         "name": "Book",
         "enchantments": [
             {
@@ -272,7 +263,7 @@ let items = [
             {
                 "name": "Unbreaking",
                 "max-level": 3
-            },
+            }
         ]
     },
     {
@@ -305,12 +296,12 @@ let items = [
             {
                 "name": "Unbreaking",
                 "max-level": 3
-            },
+            }
         ]
     },
     {
         "name": "Brush",
-            "enchantments": [
+        "enchantments": [
             {
                 "name": "Curse of Vanishing",
                 "max-level": 1
@@ -380,7 +371,7 @@ let items = [
             {
                 "name": "Unbreaking",
                 "max-level": 3
-            },
+            }
         ]
     },
     {
@@ -389,7 +380,7 @@ let items = [
             {
                 "name": "Curse of Vanishing",
                 "max-level": 1
-            },
+            }
         ]
     },
     {
@@ -418,12 +409,20 @@ let items = [
             {
                 "name": "Unbreaking",
                 "max-level": 3
-            },
+            }
         ]
     },
     {
-        "name": "Shield",
+        "name": "Elytra",
         "enchantments": [
+            {
+                "name": "Curse of Binding",
+                "max-level": 1
+            },
+            {
+                "name": "Curse of Vanishing",
+                "max-level": 1
+            },
             {
                 "name": "Mending",
                 "max-level": 1
@@ -431,23 +430,23 @@ let items = [
             {
                 "name": "Unbreaking",
                 "max-level": 3
-            },
-            {
-                "name": "Curse of Vanishing",
-                "max-level": 1
             }
         ]
     },
     {
-        "name": "Fishing rod",
+        "name": "Fishing Rod",
         "enchantments": [
+            {
+                "name": "Curse of Vanishing",
+                "max-level": 1
+            },
             {
                 "name": "Luck of the Sea",
                 "max-level": 3
             },
             {
                 "name": "Lure",
-                "max-level": 3
+                "max-level": 3 
             },
             {
                 "name": "Mending",
@@ -456,13 +455,435 @@ let items = [
             {
                 "name": "Unbreaking",
                 "max-level": 3
+            }
+        ]
+    },
+    {
+        "name": "Flint and Steel",
+        "enchantments": [
+            {
+                "name": "Curse of Vanishing",
+                "max-level": 1
             },
+            {
+                "name": "Mending",
+                "max-level": 1
+            },
+            {
+                "name": "Unbreaking",
+                "max-level": 3
+            }
+        ]
+    },
+    {
+        "name": "Helmet",
+        "enchantments": [
+            {
+                "name": "Aqua Affinity",
+                "max-level": 1
+            },
+            {
+                "name": "Blast Protection",
+                "max-level": 4
+            },
+            {
+                "name": "Curse of Binding",
+                "max-level": 1
+            },
+            {
+                "name": "Curse of Vanishing",
+                "max-level": 1
+            },
+            {
+                "name": "Fire Protection",
+                "max-level": 4 
+            },
+            {
+                "name": "Mending",
+                "max-level": 1
+            },
+            {
+                "name": "Projectile Protection",
+                "max-level": 4
+            },
+            {
+                "name": "Protection",
+                "max-level": 4
+            },
+            {
+                "name": "Respiration",
+                "max-level": 3
+            },
+            {
+                "name": "Thorns",
+                "max-level": 3
+            },
+            {
+                "name": "Unbreaking",
+                "max-level": 3
+            },
+        ]
+    },
+    {
+        "name": "Hoe",
+        "enchantments": [
+            {
+                "name": "Curse of Vanishing",
+                "max-level": 1
+            },
+            {
+                "name": "Efficiency",
+                "max-level": 5
+            },
+            {
+                "name": "Fortune",
+                "max-level": 3
+            },
+            {
+                "name": "Mending",
+                "max-level": 1
+            },
+            {
+                "name": "Silk Touch",
+                "max-level": 1
+            },
+            {
+                "name": "Unbreaking",
+                "max-level": 3
+            }
+        ]
+    },
+    {
+        "name": "Leggings",
+        "enchantments": [
+            {
+                "name": "Blast Protection",
+                "max-level": 4
+            },
+            {
+                "name": "Curse of Binding",
+                "max-level": 1
+            },
+            {
+                "name": "Curse of Vanishing",
+                "max-level": 1
+            },
+            {
+                "name": "Fire Protection",
+                "max-level": 4 
+            },
+            {
+                "name": "Mending",
+                "max-level": 1
+            },
+            {
+                "name": "Projectile Protection",
+                "max-level": 4
+            },
+            {
+                "name": "Protection",
+                "max-level": 4
+            },
+            {
+                "name": "Swift Sneak",
+                "max-level": 3
+            },
+            {
+                "name": "Thorns",
+                "max-level": 3
+            },
+            {
+                "name": "Unbreaking",
+                "max-level": 3
+            }
+        ]
+    },
+    {
+        "name": "Mace",
+        "enchantments": [
+            {
+                "name": "Breach",
+                "max-level": 4
+            },
+            {
+                "name": "Curse of Vanishing",
+                "max-level": 1
+            },
+            {
+                "name": "Density",
+                "max-level": 5
+            },
+            {
+                "name": "Fire Aspect",
+                "max-level": 2
+            },
+            {
+                "name": "Mending",
+                "max-level": 1
+            },
+            {
+                "name": "Smite",
+                "max-level": 5
+            },
+            {
+                "name": "Unbreaking",
+                "max-level": 3
+            },
+            {
+                "name": "Wind Burst",
+                "max-level": 3
+            }
+        ]
+    },
+    {
+        "name": "Pickaxe",
+        "enchantments": [
+            {
+                "name": "Curse of Vanishing",
+                "max-level": 1
+            },
+            {
+                "name": "Efficiency",
+                "max-level": 5
+            },
+            {
+                "name": "Fortune",
+                "max-level": 3
+            },
+            {
+                "name": "Mending",
+                "max-level": 1
+            },
+            {
+                "name": "Silk Touch",
+                "max-level": 1
+            },
+            {
+                "name": "Unbreaking",
+                "max-level": 3
+            },
+        ]
+    },
+    {
+        "name": "Recovery Compass",
+        "enchantments": [
             {
                 "name": "Curse of Vanishing",
                 "max-level": 1
             }
         ]
     },
+    {
+        "name": "Shears",
+        "enchantments": [
+            {
+                "name": "Curse of Vanishing",
+                "max-level": 1
+            },
+            {
+                "name": "Efficiency",
+                "max-level": 5
+            },
+            {
+                "name": "Mending",
+                "max-level": 1
+            },
+            {
+                "name": "Silk Touch",
+                "max-level": 1
+            },
+            {
+                "name": "Unbreaking",
+                "max-level": 3
+            }
+        ]
+    },
+    {
+        "name": "Shield",
+        "enchantments": [
+            {
+                "name": "Curse of Vanishing",
+                "max-level": 1
+            },
+            {
+                "name": "Mending",
+                "max-level": 1
+            },
+            {
+                "name": "Unbreaking",
+                "max-level": 3
+            }
+        ]
+    },
+    {
+        "name": "Shovel",
+        "enchantments": [
+            {
+                "name": "Curse of Vanishing",
+                "max-level": 1
+            },
+            {
+                "name": "Efficiency",
+                "max-level": 5
+            },
+            {
+                "name": "Fortune",
+                "max-level": 3
+            },
+            {
+                "name": "Mending",
+                "max-level": 1
+            },
+            {
+                "name": "Silk Touch",
+                "max-level": 1
+            },
+            {
+                "name": "Unbreaking",
+                "max-level": 3
+            }
+        ]
+    },
+    {
+        "name": "Sword",
+        "enchantments": [
+            {
+                "name": "Bane of Athropods",
+                "max-level": 5
+            },
+            {
+                "name": "Curse of Vanishing",
+                "max-level": 1
+            },
+            {
+                "name": "Fire Aspect",
+                "max-level": 2
+            },
+            {
+                "name": "Knockback",
+                "max-level": 2
+            },
+            {
+                "name": "Looting",
+                "max-level": 3
+            },
+            {
+                "name": "Mending",
+                "max-level": 1
+            },
+            {
+                "name": "Sharpness",
+                "max-level": 5
+            },  
+            {
+                "name": "Smite",
+                "max-level": 5
+            },
+            {
+                "name": "Unbreaking",
+                "max-level": 3
+            }
+        ]
+    },
+    {
+        "name": "Trident",
+        "enchantments": [
+            {
+                "name": "Channeling",
+                "max-level": 1
+            },
+            {
+                "name": "Curse of Vanishing",
+                "max-level": 1
+            },
+            {
+                "name": "Impaling",
+                "max-level": 5
+            },
+            {
+                "name": "Loyalty",
+                "max-level": 3
+            },
+            {
+                "name": "Mending",
+                "max-level": 1
+            },
+            {
+                "name": "Riptide",
+                "max-level": 3
+            },
+            {
+                "name": "Unbreaking",
+                "max-level": 3
+            }
+        ]
+    },
+    {
+        "name": "Turtle Shell",
+        "enchantments": [
+            {
+                "name": "Aqua Affinity",
+                "max-level": 1
+            },
+            {
+                "name": "Blast Protection",
+                "max-level": 4
+            },
+            {
+                "name": "Curse of Binding",
+                "max-level": 1
+            },
+            {
+                "name": "Curse of Vanishing",
+                "max-level": 1
+            },
+            {
+                "name": "Fire Protection",
+                "max-level": 4 
+            },
+            {
+                "name": "Mending",
+                "max-level": 1
+            },
+            {
+                "name": "Projectile Protection",
+                "max-level": 4
+            },
+            {
+                "name": "Protection",
+                "max-level": 4
+            },
+            {
+                "name": "Respiration",
+                "max-level": 3
+            },
+            {
+                "name": "Thorns",
+                "max-level": 3
+            },
+            {
+                "name": "Unbreaking",
+                "max-level": 3
+            }
+        ]
+    },
+    {
+        "name": "Warped Fungus on a Stick",
+        "enchantments": [
+            {
+                "name": "Curse of Vanishing",
+                "max-level": 1
+            },
+            {
+                "name": "Mending",
+                "max-level": 1
+            },
+            {
+                "name": "Unbreaking",
+                "max-level": 3
+            }
+        ]
+    }
 ];
 
 let multipliers = [
