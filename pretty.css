@@ -1,7 +1,7 @@
 #submit{
     border-color: AAAAAA;
-    color: AAAAAA;
-    font-family: cursive;
+    color: 000000;
+    font-size: large;
     border-width: 5px;
     font-family: cursive;
     width: 25%;
@@ -13,7 +13,7 @@
 }
 
 #display{
-    font-size: large;
+    font-size: larger;
     font-family: cursive;
     color: rgb(72, 218, 98);
     vertical-align: top;
@@ -21,7 +21,7 @@
 }
 
 .dropdown{
-    font-size: large;
+    font-size: larger;
     font-family: cursive;
     border-color: 000000;
     border-width: 2px;
@@ -31,7 +31,7 @@
 
 .tables{
     font-family: fantasy;
-    font-size: medium;
+    font-size: x-large;
     color: rgb(52, 43, 43);
 }
 
