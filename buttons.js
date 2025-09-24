@@ -1,14 +1,55 @@
 
 let selectedEnchantmentValuestarget = [];
 let selectedEnchantmentValuessacrifice = [];
-    
-function createItemDropdown(targetOrSacrifice) {
+let selectedItemsacrifice;
+let selectedItemtarget;
+
+function createItemDropdown(targetOrSacrifice, currentSelectedItem) {
     let dropdownElement = document.getElementById(targetOrSacrifice + "-item-selector");
-    dropdownElement.innerHTML = "<option value=''>Choose your enchantment</option>";
-    for (let i = 0; i < items.length; i++) {
-        let item = items[i];
-        dropdownElement.innerHTML +=
-            "<option value='" + item.name + "'>" + item.name + "</option>";
+    dropdownElement.innerHTML = "";
+    let set = true;
+    let refresh = false;
+    if (currentSelectedItem) {
+        if (selectedItemsacrifice === undefined) {
+            dropdownElement.innerHTML += "<option value=''>Choose your enchantment</option>";
+            console.log('choose enchan')
+            set = false;
+        }
+        if (currentSelectedItem != "Book" && selectedItemsacrifice != "Book") {
+            console.log("itsnt books")
+            dropdownElement.innerHTML +=
+                `<option value='${currentSelectedItem}'>${currentSelectedItem}</option>`
+            dropdownElement.innerHTML +=
+                `<option value='Book'>Book</option>`
+            refresh = true;
+        }else if (currentSelectedItem === "Book" && selectedItemsacrifice != "Book") {
+            console.log("its books")
+            dropdownElement.innerHTML +=
+                `<option value='Book'>Book</option>`
+            refresh = true;
+        }else if(currentSelectedItem != "Book" && selectedItemsacrifice === "Book"){
+            dropdownElement.innerHTML +=
+                `<option value='${currentSelectedItem}'>${currentSelectedItem}</option>`
+            dropdownElement.innerHTML +=
+                `<option value='Book' selected=true>Book</option>`
+        }else if(currentSelectedItem === "Book" && selectedItemsacrifice === "Book"){
+            dropdownElement.innerHTML +=
+                `<option value='Book'>Book</option>`
+        }
+        if(selectedItemsacrifice === currentSelectedItem){
+            refresh = false;
+        }
+        if(refresh && set){
+            onItemSelected(currentSelectedItem, "sacrifice")
+        }
+    } else {
+        dropdownElement.innerHTML += "<option value=''>Choose your enchantment</option>";
+        for (let i = 0; i < items.length; i++) {
+            let item = items[i];
+            dropdownElement.innerHTML +=
+                `<option value='${item.name}'>${item.name}</option>`;
+        }
+        
     }
 }
 function createEnchantment(enchantment, enchantmentNumber, targetOrSacrifice) {
@@ -24,7 +65,7 @@ function createEnchantment(enchantment, enchantmentNumber, targetOrSacrifice) {
                         id='${targetOrSacrifice}-${enchantmentNumber}.${j}'
                         value='${j}'
                         checked />
-                    ${j}
+                    <label for='${targetOrSacrifice}-${enchantmentNumber}.${j}'>${j}</label>
                 </td>`;
         } else {
             tableRowStructure +=
@@ -33,7 +74,7 @@ function createEnchantment(enchantment, enchantmentNumber, targetOrSacrifice) {
                         name='${targetOrSacrifice}-group-number-${enchantmentNumber}'
                         id='${targetOrSacrifice}-${enchantmentNumber}.${j}'
                         value='${j}'/>
-                    ${j}
+                    <label for='${targetOrSacrifice}-${enchantmentNumber}.${j}'>${j}</label>
                 </td>`;
         }
     }
@@ -48,7 +89,12 @@ function onItemSelected(itemName, targetOrSacrifice) {
     let enchantmentsTable = document.getElementById(targetOrSacrifice + "-table");
     let selectedItem = items.find(item => item.name == itemName);
     enchantmentsTable.innerHTML = "";
-
+    if (targetOrSacrifice === "target") {
+        selectedItemtarget = itemName;
+        createItemDropdown("sacrifice", itemName);
+    } else {
+       selectedItemsacrifice = itemName;
+    }
     if (selectedItem) {
         for (let k = 0; k < selectedItem.enchantments.length; k++) {
             let enchantment = selectedItem.enchantments[k];
@@ -70,7 +116,7 @@ function getSelectedButtons(targetOrSacrifice) {
     if (selectedItem != undefined) {
         let amountOfEnchantments = selectedItem.enchantments.length;
         eval("selectedEnchantmentValues" + targetOrSacrifice + "=[];")
-        let hicats = eval("selectedEnchantmentValues" + targetOrSacrifice);
+        let selectedEnchantmentValues = eval("selectedEnchantmentValues" + targetOrSacrifice);
         for (let l = 0; l < amountOfEnchantments; l++) {
             let valueElements = Array.from(document.getElementsByName(`${targetOrSacrifice}-group-number-${l + 1}`));
 
@@ -79,16 +125,10 @@ function getSelectedButtons(targetOrSacrifice) {
             });
             console.log(l);
             console.log(selectedItem.enchantments[l]);
-            hicats.push(checkedValueElement.value + "." + selectedItem.enchantments[l].name + "." + selectedItem.enchantments[l]["max-level"]);
-            console.log(hicats);
+            selectedEnchantmentValues.push(checkedValueElement.value + "." + selectedItem.enchantments[l].name + "." + selectedItem.enchantments[l]["max-level"]);
+            console.log(selectedEnchantmentValues);
         }
     }
 }
-
-
-
-
-
 createItemDropdown('target');
 createItemDropdown('sacrifice');
-

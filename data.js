@@ -899,6 +899,10 @@ let multipliers = [
     {
         "name": "Curse of Vanishing",
         "multiplier": 5
+    },
+    {
+        "name": "Aqua Affinity",
+        "multiplier": 10
     }
 ];
 
