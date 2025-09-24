@@ -4,7 +4,13 @@ function calucate() {
     let targetLevel;
     let selectedTarget;
     let enchantmentCosts = 0;
+    let multiplierFrom;
     console.log(selectedEnchantmentValuessacrifice.length);
+    if(selectedItemsacrifice != "Book"){
+        multiplierFrom = "Item"
+    } else{
+        multiplierFrom = "Book"
+    }
     for (let i = 0; i < selectedEnchantmentValuessacrifice.length; i++) {
         let selectedEnchantmentNamesacrifice = selectedEnchantmentValuessacrifice[i].slice(2, -2)
         let sacrificeLevel = parseInt(selectedEnchantmentValuessacrifice[i]);
@@ -28,8 +34,8 @@ function calucate() {
                 let finalLevel = findFinalLevel(targetLevel, sacrificeLevel, selectedTarget);
                 console.log("found the multiplyer for the sac");
                 console.log(finalLevel - targetLevel)
-                enchantmentCosts += (multipliers[j].multiplier *
-                    (finalLevel - targetLevel))
+
+                enchantmentCosts += eval("(multipliers[j].multiplierFrom" + multiplierFrom + " * (finalLevel - targetLevel))")
                 console.log(enchantmentCosts);
             }
         }

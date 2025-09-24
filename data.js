@@ -1,5 +1,14 @@
 let items = [
-     {
+    {
+        "name": "Test",
+        "enchantments": [
+           {
+                "name": "Unbreaking",
+                "max-level": 3
+           } 
+        ]
+    },
+    {
         "name": "Axe",
         "enchantments": [
             {
@@ -890,8 +899,9 @@ let multipliers = [
     
     {
         "name": "Unbreaking",
-        "multiplier": 7
-    },
+        "multiplierFromBook": 7,
+        "multiplierFromItem": 11
+    }/*,
     {
         "name": "Mending",
         "multiplier": 2
@@ -900,10 +910,10 @@ let multipliers = [
         "name": "Curse of Vanishing",
         "multiplier": 5
     },
-    {
+     {
         "name": "Aqua Affinity",
         "multiplier": 10
-    }
+    }*/
 ];
 
 
