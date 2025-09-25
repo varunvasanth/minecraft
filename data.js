@@ -896,24 +896,191 @@ let items = [
 ];
 
 let multipliers = [
-    
     {
-        "name": "Unbreaking",
-        "multiplierFromBook": 7,
-        "multiplierFromItem": 11
-    }/*,
+        "name": "Aqua Affinity",
+        "multiplierFromItem": 4,
+        "multiplierFromBook": 2
+    },
     {
-        "name": "Mending",
-        "multiplier": 2
+        "name": "Bane of Athropods",
+        "multiplierFromItem": 2,
+        "multiplierFromBook": 1
+    },
+    {
+        "name": "Blast Protection",
+        "multiplierFromItem": 4,
+        "multiplierFromBook": 2
+    },
+    {
+        "name": "Channeling",
+        "multiplierFromItem": 8,
+        "multiplierFromBook": 4
+    },
+    {
+        "name": "Curse of Binding",
+        "multiplierFromItem": 8,
+        "multiplierFromBook": 4
     },
     {
         "name": "Curse of Vanishing",
-        "multiplier": 5
+        "multiplierFromItem": 8,
+        "multiplierFromBook": 4
     },
-     {
-        "name": "Aqua Affinity",
-        "multiplier": 10
-    }*/
+    {
+        "name": "Depth Strider",
+        "multiplierFromItem": 4,
+        "multiplierFromBook": 2
+    },
+    {
+        "name": "Efficiency",
+        "multiplierFromItem": 1,
+        "multiplierFromBook": 1
+    },
+    {
+        "name": "Feather Falling",
+        "multiplierFromItem": 2,
+        "multiplierFromBook": 1
+    },
+    {
+        "name": "Fire Aspect",
+        "multiplierFromItem": 4,
+        "multiplierFromBook": 2
+    },
+    {
+        "name": "Fire Protection",
+        "multiplierFromItem": 2,
+        "multiplierFromBook": 1
+    },
+    {
+        "name": "Flame",
+        "multiplierFromItem": 4,
+        "multiplierFromBook": 2
+    },
+    {
+        "name": "Fortune",
+        "multiplierFromItem": 4,
+        "multiplierFromBook": 2
+    },
+    {
+        "name": "Frost Walker",
+        "multiplierFromItem": 4,
+        "multiplierFromBook": 2
+    },
+    {
+        "name": "Impaling",
+        "multiplierFromItem": 8,
+        "multiplierFromBook": 4
+    },
+    {
+        "name": "Knockback",
+        "multiplierFromItem": 2,
+        "multiplierFromBook": 1
+    },
+    {
+        "name": "Looting",
+        "multiplierFromItem": 4,
+        "multiplierFromBook": 2
+    },
+    {
+        "name": "Loyalty",
+        "multiplierFromItem": 1,
+        "multiplierFromBook": 1
+    },
+    {
+        "name": "Luck of the Sea",
+        "multiplierFromItem": 4,
+        "multiplierFromBook": 2
+    },
+    {
+        "name": "Lure",
+        "multiplierFromItem": 4,
+        "multiplierFromBook": 2
+    },
+    {
+        "name": "Mending",
+        "multiplierFromItem": 4,
+        "multiplierFromBook": 2
+    },
+    {
+        "name": "Multishot",
+        "multiplierFromItem": 4,
+        "multiplierFromBook": 2
+    },
+    {
+        "name": "Piercing",
+        "multiplierFromItem": 1,
+        "multiplierFromBook": 1
+    },
+    {
+        "name": "Power",
+        "multiplierFromItem": 1,
+        "multiplierFromBook": 1
+    },
+    {
+        "name": "Projectile Protection",
+        "multiplierFromItem": 2,
+        "multiplierFromBook": 1
+    },
+    {
+        "name": "Protection",
+        "multiplierFromItem": 1,
+        "multiplierFromBook": 1
+    },
+    {
+        "name": "Punch",
+        "multiplierFromItem": 4,
+        "multiplierFromBook": 2
+    },
+    {
+        "name": "Quick Charge",
+        "multiplierFromItem": 2,
+        "multiplierFromBook": 1
+    },
+    {
+        "name": "Respiration",
+        "multiplierFromItem": 4,
+        "multiplierFromBook": 2
+    },
+    {
+        "name": "Riptide",
+        "multiplierFromItem": 4,
+        "multiplierFromBook": 2
+    },
+    {
+        "name": "Sharpness",
+        "multiplierFromItem": 1,
+        "multiplierFromBook": 1
+    },
+    {
+        "name": "Silk Touch",
+        "multiplierFromItem": 8,
+        "multiplierFromBook": 4
+    },
+    {
+        "name": "Smite",
+        "multiplierFromItem": 2,
+        "multiplierFromBook": 1
+    },
+    {
+        "name": "Soul Speed",
+        "multiplierFromItem": 8,
+        "multiplierFromBook": 4
+    },
+    {
+        "name": "Swift Sneak",
+        "multiplierFromItem": 8,
+        "multiplierFromBook": 4
+    },
+    {
+        "name": "Thorns",
+        "multiplierFromItem": 8,
+        "multiplierFromBook": 4
+    },
+    {
+        "name": "Unbreaking",
+        "multiplierFromItem": 2,
+        "multiplierFromBook": 1
+    },
 ];
 
 

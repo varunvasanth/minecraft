@@ -63,6 +63,7 @@ function createEnchantment(enchantment, enchantmentNumber, targetOrSacrifice) {
                     <input type='radio'
                         name='${targetOrSacrifice}-group-number-${enchantmentNumber}'
                         id='${targetOrSacrifice}-${enchantmentNumber}.${j}'
+                        class='buttons'
                         value='${j}'
                         checked />
                     <label for='${targetOrSacrifice}-${enchantmentNumber}.${j}'>${j}</label>
@@ -73,6 +74,7 @@ function createEnchantment(enchantment, enchantmentNumber, targetOrSacrifice) {
                     <input type='radio'
                         name='${targetOrSacrifice}-group-number-${enchantmentNumber}'
                         id='${targetOrSacrifice}-${enchantmentNumber}.${j}'
+                        class='buttons'
                         value='${j}'/>
                     <label for='${targetOrSacrifice}-${enchantmentNumber}.${j}'>${j}</label>
                 </td>`;
