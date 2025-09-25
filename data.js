@@ -1,14 +1,5 @@
 let items = [
     {
-        "name": "Test",
-        "enchantments": [
-           {
-                "name": "Unbreaking",
-                "max-level": 3
-           } 
-        ]
-    },
-    {
         "name": "Axe",
         "enchantments": [
             {
@@ -64,10 +55,10 @@ let items = [
                 "name": "Blast Protection",
                 "max-level": 4
             },
-            {
+            /*{
                 "name": "Breach",
                 "max-level": 4
-            },
+            },*/
             {
                 "name": "Channeling",
                 "max-level": 1
@@ -84,10 +75,10 @@ let items = [
                 "name": "Depth Strider",
                 "max-level": 3
             },
-            {
+            /*{
                 "name": "Density",
                 "max-level": 5
-            },
+            },*/
             {
                 "name": "Efficiency",
                 "max-level": 5
@@ -212,10 +203,10 @@ let items = [
                 "name": "Unbreaking",
                 "max-level": 3
             },
-            {
+            /*{
                 "name": "Wind Burst",
                 "max-level": 3
-            }
+            }*/
         ]
     },
     {
@@ -607,7 +598,7 @@ let items = [
             }
         ]
     },
-    {
+    /*{
         "name": "Mace",
         "enchantments": [
             {
@@ -643,7 +634,7 @@ let items = [
                 "max-level": 3
             }
         ]
-    },
+    },*/
     {
         "name": "Pickaxe",
         "enchantments": [
