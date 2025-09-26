@@ -10,19 +10,22 @@
             <td style="vertical-align: top;" width="30%">
                 <select id="target-item-selector" class="dropdown" 
                     onchange="onItemSelected(value, 'target')"></select>
-
+                <label class="label" for="target-use-count">Anvil Use Count</label>
+                <input class="input-box" id="target-use-count" onchange="setPriorWorkPenalty(value, 'Target')"    />
                 <table id="target-table" class="tables"></table>
             </td>
             <td style="vertical-align: top;" width="30%">
                 <select id="sacrifice-item-selector" class="dropdown"
                     onchange="onItemSelected(value, 'sacrifice')"></select>
-
+                <label class="label" for="sacrifice-use-count">Anvil Use Count</label>
+                <input class="input-box" id="sacrifice" onchange="setPriorWorkPenalty(value, 'Sacrifice')"/>
                 <table id="sacrifice-table" class="tables"></table>
             </td>
             <td class="submit-and-display" width="40%">
                 <button id="submit" onclick="onSubmit()">Submit</button>
                 <p id="display" width="40%"></p>
             </td>
+        </tr>
     </table>
     <script src="calculations.js"></script>
     <script src="data.js"></script>

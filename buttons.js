@@ -3,6 +3,23 @@ let selectedEnchantmentValuestarget = [];
 let selectedEnchantmentValuessacrifice = [];
 let selectedItemsacrifice;
 let selectedItemtarget;
+let priorWorkPenaltyTarget = 0;
+let priorWorkPenaltySacrifice = 0;
+
+function setPriorWorkPenalty(anvilUseCount, targetOrSacrifice){
+    let priorWorkPenalty = (2**anvilUseCount)-1
+    ;
+    if(targetOrSacrifice === "Target"){
+        priorWorkPenaltyTarget=priorWorkPenalty;
+    }else{
+        priorWorkPenaltySacrifice=priorWorkPenalty;
+    }
+    
+    console.log(priorWorkPenaltySacrifice)
+    console.log(priorWorkPenaltyTarget)
+    console.log(anvilUseCount)
+    console.log(priorWorkPenalty)
+};
 
 function createItemDropdown(targetOrSacrifice, currentSelectedItem) {
     let dropdownElement = document.getElementById(targetOrSacrifice + "-item-selector");

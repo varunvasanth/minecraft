@@ -23,10 +23,6 @@ function calucate() {
         if (sacrificeLevel === 0 && (targetLevel === 0 || targetLevel === undefined)) {
             continue;
         }
-        console.log(sacrificeLevel)
-        console.log(targetLevel)
-        console.log(selectedTarget)
-        console.log(i)
 
         for (let j = 0; j < multipliers.length; j++) {
             if (selectedEnchantmentValuessacrifice[i].slice(2, -2) === multipliers[j].name) {
@@ -35,14 +31,18 @@ function calucate() {
                 console.log("found the multiplyer for the sac");
                 console.log(finalLevel - targetLevel)
 
-                enchantmentCosts += eval("(multipliers[j].multiplierFrom" + multiplierFrom + " * (finalLevel - targetLevel))")
+                enchantmentCosts += eval("(multipliers[j].multiplierFrom" + multiplierFrom + " * (finalLevel - targetLevel))");
+                //enchantmentCosts += priorWorkPenaltyTarget + priorWorkPenaltySacrifice;
                 console.log(enchantmentCosts);
             }
         }
 
         targetLevel = 0;
     }
-
+    console.log(priorWorkPenaltySacrifice)
+    console.log(priorWorkPenaltyTarget)
+    enchantmentCosts += priorWorkPenaltyTarget + priorWorkPenaltySacrifice;
+    console.log(enchantmentCosts);
     document.getElementById("display").innerText = "Combining these 2 items costs " + enchantmentCosts + " levels.";
 
 }

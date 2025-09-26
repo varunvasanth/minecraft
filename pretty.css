@@ -12,6 +12,20 @@
     white-space: nowrap;
 }
 
+.label{
+    font-size: large;
+    font-family: cursive;
+}
+
+.input-box{
+    font-family: cursive;
+    font-size: medium;
+    color:rgb(0, 0, 0);
+    width: 10%;
+    height: 100%;
+    border-width: 2px;
+}
+
 .buttons{
     border: 2px;
     height: 20px;
